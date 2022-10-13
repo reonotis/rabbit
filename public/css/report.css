@@ -1,0 +1,78 @@
+:root{
+    --report-contents-report: 300px;
+}
+
+.reportContents {
+    margin-bottom: 1rem;
+}
+.reportContentsReport {
+    width: var(--report-contents-report);
+}
+.reportContentsReserve {
+    width: calc(100% - var(--report-contents-report) - 1rem);
+    margin-left: 1rem;
+}
+.reportContentCard{
+    position: relative;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: var(--active-color);
+    color: white;
+    border: solid 1px var(--boundary-color);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.reportContentCard::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-bottom: solid 3px #fff;
+    border-left: solid 3px #fff;
+    right: 20px;
+    transition: var(--transition-hover);
+    transform: rotate(135deg);
+}
+.reportContentCard.close::after {
+    transform: rotate(-45deg);
+}
+.reportContentBody{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: solid 1px var(--boundary-color);
+    border-top: none;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.reportTable th{
+    background: #ccc;
+    color: #333;
+}
+.reportTable th,
+.reportTable td {
+    padding: 0.1rem 0.5rem;
+    border: solid 1px var(--boundary-color);
+}
+
+
+
+.reservesTable th{
+    background: #ccc;
+    color: #333;
+}
+.reservesTable th,
+.reservesTable td {
+    padding: 0.1rem 0.5rem;
+    border: solid 1px var(--boundary-color);
+}
+.reservesTable tr:not(:last-child) {
+    border-bottom: solid 1px var(--boundary-color);
+}
+.reservesTable tr:nth-child(odd){
+    background: #e6e9f3;
+}
+

@@ -1,0 +1,91 @@
+:root{
+    --report-contents-report: 300px;
+    --reserve-section: 55px;
+}
+
+
+
+.reserveContentsArea{
+    position: relative;
+}
+
+.reserveContents{
+    border: solid 1px #333;
+    display: inline-block;
+}
+.reserveContentsHeader {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #bbb;
+    border-bottom: solid 1px #333;
+    font-weight: bold;
+}
+.reserveHeaderContents {
+    padding: 0.25rem 0.25rem 0.25rem 0;
+}
+
+.reserveContentsHeader > .reserveHeaderContents:not(:first-child),
+.usersTime {
+    width: var(--reserve-section);
+    max-width: var(--reserve-section);
+    min-width: var(--reserve-section);
+    padding: 0.1rem 0;
+    border-left: solid 1px #333;
+}
+.reserveUsers{
+    display: flex;
+}
+.reserveUsers:not(:last-child){
+    border-bottom: solid 1px #333;
+}
+.reserveUserName{
+    background: #bbb;
+    width: 120px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userReserves:not(:last-child){
+    border-bottom: solid 1px #333;
+}
+
+
+
+
+.reserveBox {
+    position: relative;
+    height: 100%;
+    padding: 0.1rem 0;
+    background: #eeee;
+    border: solid 1px #333;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.section_1 {
+    width: calc(var(--reserve-section) * 1 - 1px);
+}
+.section_2 {
+    width: calc(var(--reserve-section) * 2 - 1px);
+}
+.section_3 {
+    width: calc(var(--reserve-section) * 3 - 1px);
+}
+.section_4 {
+    width: calc(var(--reserve-section) * 4 - 1px);
+}
+.section_5 {
+    width: calc(var(--reserve-section) * 5 - 1px);
+}
+.section_over{
+    border: solid 1px red;
+}
+
+
+
+
+
+
+
+

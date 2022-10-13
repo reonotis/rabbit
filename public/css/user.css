@@ -1,0 +1,52 @@
+:root{
+    --customer-title-width: 120px;
+}
+
+
+
+
+
+
+
+.user_search_tbl {
+    max-width: 100%;
+    border-collapse: collapse;
+}
+.user_search_tbl th{
+    background: var(--boundary-color);
+    width: 120px;
+    border: solid 1px var(--main-color);
+}
+.user_search_tbl td{
+    width: calc(100% - 120px);
+    padding: 5px;
+    border: solid 1px var(--main-color);
+}
+.user_search_tbl td > .flex:not(:last-child){
+    border-bottom: solid 1px #333;
+    margin: 0.5rem 0;
+}
+
+
+
+
+.userListTbl{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.userListTbl th,
+.userListTbl td {
+    padding: 0.25rem;
+    border: solid 1px var(--active-color);
+}
+.userListTbl th {
+    background: var(--active-color);
+    color: white;
+}
+.userListTbl th:not(:last-child){
+    border-right: solid 1px white;
+}
+.userListTbl > tbody > tr:nth-child(even){
+    background: #e6e9f3;
+}
+
